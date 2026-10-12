@@ -1,0 +1,225 @@
+:root {
+  --biru: #1c2f4f;
+  --biru-muda: #2c4670;
+  --emas: #b08d4a;
+  --emas-tua: #94753a;
+  --abu-muda: #f5f6f8;
+  --garis: #dde2ea;
+  --teks: #3b4556;
+
+  --bs-link-color-rgb: 28, 47, 79;
+  --bs-link-hover-color-rgb: 148, 117, 58;
+}
+
+body {
+  color: var(--teks);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--biru);
+}
+
+.navbar-sekolah {
+  background-color: var(--biru);
+}
+
+.navbar-sekolah .nav-link {
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-sekolah .nav-link.active {
+  border-bottom-color: var(--emas);
+}
+
+.judul-halaman {
+  background: linear-gradient(135deg, var(--biru), var(--biru-muda));
+  color: white;
+}
+
+.judul-halaman h1 {
+  color: white;
+}
+
+.judul-halaman p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tombol-emas {
+  background-color: var(--emas);
+  border-color: var(--emas);
+  color: white;
+}
+
+.tombol-emas:hover {
+  background-color: var(--emas-tua);
+  border-color: var(--emas-tua);
+  color: white;
+}
+
+.bagian-abu {
+  background-color: var(--abu-muda);
+  border-top: 1px solid var(--garis);
+  border-bottom: 1px solid var(--garis);
+}
+
+.garis-aksen {
+  width: 60px;
+  height: 3px;
+  background-color: var(--emas);
+  border: 0;
+  opacity: 1;
+  margin: 0.75rem 0 2rem 0;
+}
+
+.kartu-sekolah {
+  background-color: white;
+  border: 1px solid var(--garis);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.kartu-sekolah:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.angka {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--emas);
+  line-height: 1.2;
+}
+
+.foto-kosong {
+  background-color: #e9edf3;
+  border: 2px dashed #b4bfd0;
+  border-radius: 12px;
+  color: #6b778c;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.kartu-sekolah .foto-kosong {
+  border: 0;
+  border-bottom: 1px dashed #b4bfd0;
+  border-radius: 0;
+}
+
+.lingkaran-a {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: var(--biru);
+  border: 5px solid var(--emas);
+  color: var(--emas);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 4.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabel-sekolah thead th {
+  background-color: var(--biru);
+  color: white;
+}
+
+.footer-sekolah {
+  background-color: var(--biru);
+  color: #c9d2e0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.slot-hero {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .slot-hero {
+    height: 380px;
+  }
+}
+
+.kotak-caption {
+  background-color: rgba(28, 47, 79, 0.78);
+  border-radius: 12px;
+  padding: 1.25rem 1rem;
+  bottom: 3rem;
+}
+
+.kotak-caption h2 {
+  color: white;
+}
+
+.tombol-atas {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: var(--biru);
+  color: var(--emas);
+  border: 2px solid var(--emas);
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 1030;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.tombol-atas:hover {
+  background-color: var(--emas);
+  color: white;
+}
+
+.accordion-sekolah .accordion-button:not(.collapsed) {
+  background-color: var(--abu-muda);
+  color: var(--biru);
+  box-shadow: none;
+}
+
+.accordion-sekolah .accordion-button:focus {
+  border-color: var(--emas);
+  box-shadow: 0 0 0 0.2rem rgba(176, 141, 74, 0.3);
+}
+
+.foto-isi {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.kartu-sekolah .foto-isi {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.fokus-atas {
+  object-position: center 30%;
+}
+
+.accordion-sekolah .accordion-header {
+  font-family: var(--bs-body-font-family);
+  font-weight: 600;
+}
